@@ -87,7 +87,7 @@ main(int argc, char** argv)
 	double endWTime;
 	if(my_rank ==0){
 		endWTime = MPI_Wtime();
-		cout<<"With n == "<<n<<" trapezoids, our estimate"<<endl;
+		cout<<"With n == "<<n<<" intervals, our estimate"<<endl;
 		cout<<"of the integral from "<<a<<" to "<<b<<" is "<<total<<endl;
 		cout<<"Number of processors used = "<<p<<endl;
 		cout<<"Time elapsed: "<<(endWTime-startWTime)*1000<<"ms"<<endl;
